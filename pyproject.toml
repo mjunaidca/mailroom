@@ -1,0 +1,17 @@
+[project]
+name = "mailroom"
+version = "0.1.0"
+description = "Command-line tool for Kettlebird Tea's Steep Club newsletter: reads subscribers, checks an issue, and sends it to a practice mail server."
+readme = "README.md"
+authors = [
+    { name = "mjunaidca" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+mailroom = "mailroom:main"
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
